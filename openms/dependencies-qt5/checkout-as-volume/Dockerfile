@@ -26,7 +26,7 @@ RUN sudo apt-get -y update && \
          rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install Step 1b: get sources. Here from a directory at the same level as the repo root.
-ADD ../../../contrib ./contrib
+ADD ../../../../contrib ./contrib
 RUN rm -rf contrib/.git/
 
 # Install Step 2: obtain cmake 3.x in ubuntu 14.04
